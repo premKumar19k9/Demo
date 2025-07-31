@@ -12,6 +12,7 @@ public class DemoApplication {
 	public static void main(String[] args) {
 		log.info("Starting Application");
 		ApplicationContext applicationContext = SpringApplication.run(DemoApplication.class, args);
+		log.info("Application Context: {}", applicationContext.getId());
 		log.info("Started Application {}", applicationContext.getEnvironment().getProperty("spring.application.name"));
 	}
 
